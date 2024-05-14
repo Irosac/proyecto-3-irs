@@ -64,6 +64,7 @@ export const handleSearchResults = (photos) => {
   const imagesContainer = document.querySelector('.images')
   const suggestionsDiv = document.querySelector('.suggestions')
   const messageParagraph = document.querySelector('p.message')
+  const input = document.querySelector('#searchBar input')
   messageParagraph.style.display = 'block'
   imagesContainer.innerHTML = ''
 
@@ -76,6 +77,9 @@ export const handleSearchResults = (photos) => {
       'Esta búsqueda no tiene resultados, prueba con alguna de estas sugerencias;'
     const randomOptions = selectRandomOptions()
     showRandomOptions(randomOptions)
+    setTimeout(() => {
+      input.value = ''
+    }, 1500)
   } else {
     suggestionsDiv.innerHTML = ''
     messageParagraph.innerHTML = ''
