@@ -56,6 +56,7 @@ export const showRandomOptions = (options) => {
     optionElement.addEventListener('click', async () => {
       const photos = await fetchPhotos(option)
       handleSearchResults(photos)
+      document.querySelector('#searchBar input').value = option
     })
 
     optionContainer.appendChild(optionElement)
