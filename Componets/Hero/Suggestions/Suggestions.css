@@ -1,0 +1,51 @@
+/* En mi función le he dado la class random-options al div que contiene los botones de sugerencias y también a cada button, la class random-option */
+
+/* Estilos para el contenedor */
+.random-options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Estilos para los botones de sugerencias */
+.random-option {
+  border-radius: 30px;
+  border: 1px solid rgb(0, 195, 255);
+  padding: 0.6em 0.6em;
+  font-size: 1.1em;
+  font-family: 'Bebas Neue', sans-serif;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  background-color: rgba(129, 180, 251, 0.454);
+}
+
+.random-option:hover {
+  background-color: #186eab68;
+}
+
+/* Mi mensaje se sugerencias se hace en searchBAr.js pero lo estilo aquí. */
+
+.message {
+  display: none;
+  font-family: 'Bebas Neue', sans-serif;
+  background-color: #ebebeb;
+  border-radius: 20px;
+  padding: 5px;
+  text-align: center;
+  margin: 5px auto;
+  max-width: 70%;
+}
+
+@media only screen and (max-width: 768px) {
+  .random-option {
+    border-radius: 30px;
+    border: 1px solid rgb(0, 195, 255);
+    padding: 0.6em 0.6em;
+    font-size: 1em;
+    font-family: 'Bebas Neue', sans-serif;
+    cursor: pointer;
+    transition: border-color 0.25s;
+    background-color: rgba(129, 180, 251, 0.454);
+  }
+}
