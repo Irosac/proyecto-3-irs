@@ -81,3 +81,5 @@ export const addExploreClickEvent = () => {
   const exploreButton = parentDiv.children[1]
   exploreButton.addEventListener('click', handleExploreClick)
 }
+
+// Quiero hacer una cosa aquí
