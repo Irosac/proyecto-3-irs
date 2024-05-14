@@ -47,7 +47,7 @@ import { fetchRandomPhotos, handleSearchResults } from '../SearchBar/SearchBar'
 
 // Función para manejar el evento de clic en el botón "Inicio", debo definirla antes ya que abajo la utilizo en un arrow function.
 
-const handleInicioClick = async () => {
+export const handleInicioClick = async () => {
   const photos = await fetchRandomPhotos(10)
   handleSearchResults(photos)
 }

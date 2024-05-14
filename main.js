@@ -3,7 +3,8 @@ import './style.css'
 import {
   finalPrimaryButtons,
   finalSecondaryButtons,
-  addInicioClickEvent
+  addInicioClickEvent,
+  handleInicioClick
 } from './Componets/Header/Buttons/Buttons'
 
 import { createSearchBar } from './Componets/Header/SearchBar/SearchBar'
@@ -15,3 +16,4 @@ createSearchBar(document.getElementById('searchBar'))
 finalSecondaryButtons()
 addExploreClickEvent()
 addInicioClickEvent()
+handleInicioClick()
