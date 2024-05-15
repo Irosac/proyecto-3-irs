@@ -1,5 +1,5 @@
 import './SearchBar.css'
-const apiKey = 'ai0qAGImiDYEsMUSqJXaRakJnTTQcV1rwCPh75QTQZs'
+import { apiKey } from '../../../info.env'
 
 import {
   showRandomOptions,
